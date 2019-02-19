@@ -32,33 +32,32 @@ h2 {
 	height:250px;
 }
 
-/*.banned{
-	background-image:url("images/banned.png");
-	opacity: 0%;
-	position: absolute;
-}*/
+#backButton {
+	background-color: #2196F3; 
+	border: none;
+	color: white;
+	position:absolute;
+	visibility: hidden;
+	left:2vw;
+}
 
 .player1banned {
 	border:5px solid red;
 	box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 } 
 
 .player2banned {
 	border:5px solid blue;
 	box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 } 
 
 .chosen {
 	border:5px solid green;
 	box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 } 
-
-.disabled {
-	cursor: not-allowed;
-}
 
 h3 {
 	font-size: 40px;
@@ -95,7 +94,9 @@ h3 {
 	}
 
 	h1,h2{
+		font-size: 55px;
 		text-align: center;
+		word-wrap: break-word;
 	}
 
 	h3{
@@ -110,8 +111,18 @@ h3 {
 		background-color: #2196F3;
 	}
 
+	#backButton {
+		position: static;
+		background-color: #2196F3; 
+		border: none;
+		color: white;
+		font-size: 4px;
+	}
+
 }
 
+
+/*iPad Resolution*/
 @media only screen and (max-width: 768px) {
 
 
