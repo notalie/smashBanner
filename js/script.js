@@ -19,7 +19,7 @@ $(document).ready(function(){
         gameSwitch.remove();
         document.getElementById("counterpicks").remove();
         banOrder = [0,1,1,2];
-        $("#starters").children().children().css({"height": "350px","width":"600px","margin":"5px"});
+        $("#starters img").css({"height": "300px","width":"600px","margin":"5px"});
         changeText();
         document.getElementById("choosingPlayer").innerHTML = "Winner is Striking";
     });
@@ -63,7 +63,6 @@ $(document).ready(function(){
             document.getElementById("choosingPlayer").innerHTML = "Winner is Striking";
             $(backButton).css("visibility","hidden");
         }
-        console.log(iterator);
     }
 
     function textCurrent() {
