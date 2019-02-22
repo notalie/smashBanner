@@ -1,24 +1,20 @@
 $(document).ready(function(){
 
+    //get inputted value that was stored from previous page and execute a query to get a list
+    // FNS = [0,1,3] && [0,1,1,2]
     var stageList = [];
-    var banOrder = [0,1,3]
-    var player1 = "active";
+    var banOrder = [0,0,0,1,1,1,1,2]
     var bansFinished = false;
     var iterator = 0;
 
     var gameSwitch = document.getElementById("gameSwitch");
     var backButton = document.getElementById("backButton");
-
     var mobileView = window.matchMedia("(max-width: 700px)");
-
-    if(bansFinished) {
-        alert('we finished');
-    }
 
     $("#game1Switch").click(function(event) {
         gameSwitch.remove();
         document.getElementById("counterpicks").remove();
-        banOrder = [0,1,1,2];
+        banOrder = [0,0,3];
         $("#starters img").css({"height": "300px","width":"600px","margin":"5px"});
         changeText();
         document.getElementById("choosingPlayer").innerHTML = "Winner is Striking";
@@ -31,6 +27,7 @@ $(document).ready(function(){
     });
 
     $("img").click(function(event) {
+        var imageClicked = $(event.target);
         if(mobileView.matches){
             $(backButton).css({"padding":"15px 15px","visibility": "visible","font-size": "20px","background-color":"blue"});
             $("h1").css({"text-align":"right"});
@@ -38,11 +35,10 @@ $(document).ready(function(){
             $(backButton).css({"padding":"15px 32px","visibility": "visible","font-size": "16px"});
         }
         
-    	var imageClicked = $(event.target);
     	if(bansFinished || isSelected(imageClicked)) {
 
     	} else {
-             // Checks if the switch for game 1 is still existent
+             // Checks if the switch is still existent
             if(gameSwitch) {
 	            gameSwitch.remove();
             }
