@@ -8,7 +8,7 @@ h1 {
 	color:white;
 	font-family: 'Staatliches', cursive;
 	font-size: 75px;
-	margin:0;
+	margin:0 auto;
 	font-weight: 100;
 }
 
@@ -60,10 +60,12 @@ h2 {
 } 
 
 h3 {
-	font-size: 40px;
+	font-size: 80px;
 	font-family: 'Staatliches', cursive;
 	color:white;
 	font-weight: 100;
+	margin:-1%;
+	padding-left:2%;
 }
 
 #gameSwitch {
@@ -74,7 +76,7 @@ h3 {
 }
 
 /*iPhone from 5 - X*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 435px) {
 	body {
 		background-image:url("images/phoneBackground.jpg");
 		background-repeat:repeat;
@@ -89,18 +91,18 @@ h3 {
 	}
 
 	#starters img, #counterpicks img {
-		width:300px;
+		width:350px;
 		height:175px;
+		margin: 5px;
 	}
 
 	h1,h2{
 		font-size: 55px;
 		text-align: center;
-		word-wrap: break-word;
 	}
 
 	h3{
-		font-size: 30px;
+		font-size: 40px;
 		text-align: center;
 		margin:10px;
 	}
@@ -109,6 +111,7 @@ h3 {
 		flex-direction: column;
 		text-align: center;
 		background-color: #2196F3;
+		margin-top: 10px solid transparent;
 	}
 
 	#backButton {
@@ -124,8 +127,6 @@ h3 {
 
 /*iPad Resolution*/
 @media only screen and (max-width: 768px) {
-
-
 	body {
 		background-image:url("images/phoneBackground.jpg");
 		background-repeat:repeat;
