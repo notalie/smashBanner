@@ -30,7 +30,7 @@ $(document).ready(function(){
         var imageClicked = $(event.target);
         if(mobileView.matches){
             $(backButton).css({"padding":"15px 15px","visibility": "visible","font-size": "20px","background-color":"blue"});
-            $("h1").css({"text-align":"right"});
+            //$("h1").css({"text-align":"right"});
         } else if(!bansFinished){
             $(backButton).css({"padding":"15px 32px","visibility": "visible","font-size": "16px"});
         }
@@ -112,11 +112,12 @@ $(document).ready(function(){
                 $(imageClicked).addClass("player2banned");
                 break;
             case 2:
-                document.getElementById("choosingPlayer").innerHTML = "To " + stageName + " we go!";
+                document.getElementById("choosingPlayer").innerHTML = stageName + "  it is!";
                 $(imageClicked).addClass("chosen");
+
                 break;
             case 3:
-                document.getElementById("choosingPlayer").innerHTML = "To " + stageName + " we go!";
+                document.getElementById("choosingPlayer").innerHTML = stageName + "  it is!";
                 $(imageClicked).addClass("chosen");
                 break;
         }
